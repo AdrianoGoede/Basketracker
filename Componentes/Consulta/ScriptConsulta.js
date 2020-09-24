@@ -7,12 +7,6 @@ const AlternarElemsPaginaConsulta = () => {
     $("#MenuConsulta").fadeToggle(0);
 }
 
-$("#VoltarConsulta").click(() => {
-    AlternarPaginaConsulta();
-    $("title").html("Bem Vindo(a)!");
-    AlternarPaginaInicio();
-});
-
 $("#PorNumero").click(() => {
     // if (Entradas.length > 0) {
         AlternarElemsPaginaConsulta();
@@ -34,11 +28,17 @@ $("#MinMax").click(() => {
 });
 
 $("#VerTabela").click(() => {
-    // if (Entradas.length > 0) {
+    if (Entradas.length > 0) {
         AlternarElemsPaginaConsulta();
         $("title").html("Tabela");
         AlternarTabela();
-    // }
-    // else
-    //     alert("Ainda não há registros!");
+    }
+    else
+        alert("Ainda não há registros!");
+});
+
+$("#VoltarConsulta").click(() => {
+    AlternarPaginaConsulta();
+    $("title").html("Bem Vindo(a)!");
+    AlternarPaginaInicio();
 });

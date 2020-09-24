@@ -2,12 +2,6 @@ const AlternarPaginaInsercao = () => {
     $("#Insercao").fadeToggle(500);
 }
 
-$("#VoltarInsercao").click(() => {
-    AlternarPaginaInsercao();
-    $("title").html("Bem Vindo(a)!");
-    AlternarPaginaInicio();
-});
-
 $("#Dado").keypress((e) => {
     e.preventDefault();
     if ("0123456789".includes(e.key))
@@ -28,4 +22,11 @@ $("#BtInserir").click(() => {
     }
     else
         alert("Nenhum valor informado!");
+});
+
+$("#VoltarInsercao").click(() => {
+    AlternarPaginaInsercao();
+    CalcularRecordes();
+    $("title").html("Bem Vindo(a)!");
+    AlternarPaginaInicio();
 });
