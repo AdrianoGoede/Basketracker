@@ -3,12 +3,13 @@ const DisplayPaginaInsercao = () => {
     $(".TextoPontuacao").fadeToggle(1000);
     $(".Campo").fadeToggle(800);
     $(".BotaoInserir").fadeToggle(500);
-    $("#Voltar").fadeToggle(300);
+    $("#VoltarInsercao").fadeToggle(300);
 }
 
-$("#Voltar").click(() => {
+$("#VoltarInsercao").click(() => {
     DisplayPaginaInsercao();
     DisplayPaginaPrincipal();
+    $("title").html("Bem Vindo(a)!");
 });
 
 $("#Dado").keypress((e) => {
@@ -25,7 +26,9 @@ $("#BtInserir").click(() => {
             Dado.value = "";
             return;
         }
-        console.log(dado);
+        AddEntrada(dado);
+        alert(`Pontuação [${dado}] inserida com sucesso!`);
+        Dado.value = "";
     }
     else
         alert("Nenhum valor informado!");

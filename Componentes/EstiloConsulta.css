@@ -1,0 +1,72 @@
+#Consulta {
+    display: none;
+}
+
+.bd {
+    height: 90vh;
+    width: 75vh;
+    position: absolute;
+    top: 7vh;
+    left: 20vh;
+    opacity: 70%;
+    display: none;
+}
+
+#Menu {
+    position: relative;
+    height: 60vh;
+    width: 90vh;
+    top: 15vh;
+    display: none;
+}
+
+.TextoPergunta {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 4vh;
+    position: relative;
+    top: 15%;
+    left: 6%;
+    display: none;
+}
+
+.BotaoPergunta {
+    height: 7vh;
+    width: 55vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    border: solid .2vh black;
+    position: absolute;
+    left: 17.5%;
+    display: none;
+}
+
+#PorNumero {
+    top: 30%;
+}
+
+#Recordes {
+    top: 45%;
+}
+
+#Tabela {
+    top: 60%;
+}
+
+.SaidaConsulta {
+    height: 5vh;
+    border: solid .3vh black;
+    position: absolute;
+    top: 77%;
+    left: 43%;
+    display: none;
+}
+
+.SaidaConsulta:hover {
+    cursor: pointer;
+    border-width: .5vh;
+    opacity: 80%;
+    display: none;
+}

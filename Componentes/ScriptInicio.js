@@ -10,14 +10,17 @@ window.onload = () => {
 }
 
 $("#Sobre").click(() => {
-    alert("Desenvolvido por Adriano Andrei Goede");
+    alert("Desenvolvido por Adriano Andrei Goede\n\n         Microsoft Visual Studio Code\n\n             Debian 10.5 GNU/Linux");
 });
 
 $("#Inserir").click(() => {
     DisplayPaginaPrincipal();
     DisplayPaginaInsercao();
+    $("title").html("Inserir Dados");
 });
 
 $("#Consultar").click(() => {
-    // DisplayPaginaPrincipal();
+    DisplayPaginaPrincipal();
+    DisplayPaginaConsulta();
+    $("title").html("Consultar Dados");
 });

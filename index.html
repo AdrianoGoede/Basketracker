@@ -19,7 +19,17 @@
         <h1 class="TextoPontuacao">Digite a pontuação</h1>
         <input type="text" class="form-control Campo" id="Dado">
         <button type="button" class="btn btn-primary BotaoInserir" id="BtInserir">Inserir!</button>
-        <img src="./Imagens/Saida.png" alt="" class="Saida" id="Voltar">
+        <img src="./Imagens/Saida.png" alt="" class="SaidaInsercao" id="VoltarInsercao">
+    </div>
+    <div id="Consulta">
+        <img src="./Imagens/BD.png" alt="" class="bd">
+        <div id="Menu">
+            <h1 class="TextoPergunta">Selecione uma opção de consulta</h1>
+            <button type="button" class="btn btn-warning BotaoPergunta" id="PorNumero">Por número do jogo</button>
+            <button type="button" class="btn btn-warning BotaoPergunta" id="Recordes">Ver Recordes</button>
+            <button type="button" class="btn btn-warning BotaoPergunta" id="Tabela">Tabela</button>
+            <img src="./Imagens/Saida.png" alt="" class="SaidaConsulta" id="VoltarConsulta">
+        </div>
     </div>
 </body>
 </html>
@@ -27,6 +37,9 @@
 <script src="./Bootstrap/js/bootstrap.min.js"></script>
 <script src="./Componentes/ScriptInicio.js"></script>
 <script src="./Componentes/ScriptInsercao.js"></script>
+<script src="./Componentes/ScriptConsulta.js"></script>
+<script src="./Componentes/Controle.js"></script>
 <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="./Componentes/EstiloInicio.css">
 <link rel="stylesheet" href="./Componentes/EstiloInsercao.css">
+<link rel="stylesheet" href="./Componentes/EstiloConsulta.css">
