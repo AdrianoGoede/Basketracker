@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#Inicio {
+    width: 90vh;
+    height: 90vh;
+    position: absolute;
+    top: 5vh;
+    display: none;
+}
+
+#MenuInicial {
+    height: 60vh;
+    width: 90vh;
+    position: absolute;
+    top: 15vh;
+}
+
+.Bola {
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+}
+
+.Texto {
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+}
+
+.BemVindo {
+    font-size: 6.7vh;
+    top: 10%;
+    left: 20%;
+}
+
+.Selecione {
+    font-size: 3.5vh;
+    top: 24%;
+    left: 27%;
+}
+
+#Inserir, #Consultar {
+    width: 55%;
+    height: 17%;
+    position: absolute;
+    border-style: solid;
+    border-width: .4vh;
+    border-color: black;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+#Inserir {
+    top: 36%;
+    left: 22%;
+}
+
+#Consultar {
+    top: 55%;
+    left: 22%;
+}
+
+.Sobre {
+    width: 20%;
+    height: 12%;
+    border-style: solid;
+    border-width: .4vh;
+    border-color: black;
+    font-size: 3vh;
+    font-weight: bold;
+    position: absolute;
+    top: 75%;
+    left: 39%;
+}

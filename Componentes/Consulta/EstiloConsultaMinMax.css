@@ -1,0 +1,49 @@
+#MenuConsultaMinMax {
+    display: none;
+    width: 55vh;
+    height: 45vh;
+    position: relative;
+    top: 30vh;
+}
+
+.PainelMinMax {
+    background-color: brown;
+    height: 50%;
+    width: 45%;
+    border: solid .5vh black;
+    position: absolute;
+    text-align: center;
+}
+
+#Min {
+    top: 0%;
+    left: 0%;
+}
+
+#Max {
+    top: 0%;
+    left: 55%;
+}
+
+
+.TxtMinMax {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 4vh;
+    margin-top: 10%;
+}
+
+.NumMinMax {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 6vh;
+    margin-top: 12%;
+}
+
+#VoltarConsultaMinMax {
+    position: absolute;
+    top: 60%;
+    left: 41.7%;
+}

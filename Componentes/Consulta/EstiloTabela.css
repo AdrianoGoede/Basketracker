@@ -1,0 +1,18 @@
+#Tabela {
+    position: relative;
+    margin-top: 5vh;
+    display: none;
+}
+
+.LayoutTabela {
+    width: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    opacity: 90%;
+}
+
+#VoltarConsultaTabela {
+    position: relative;
+    left: 45%;
+}

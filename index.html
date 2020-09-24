@@ -8,38 +8,84 @@
 <body>
     <div id="Inicio">
         <img src="./Imagens/Bola" alt="" class="Bola">
-        <h1 class="BemVindo Texto">Bem Vindo(a)!</h1>
-        <h2 class="Selecione Texto">Selecione uma opção</h2>
-        <button type="button" class="btn btn-info Botao" id="Inserir">Inserir Dados</button>
-        <button type="button" class="btn btn-info Botao" id="Consultar">Consultar Dados</button>
-        <button type="button" class="btn btn-warning Sobre" id="Sobre">Sobre!</button>
+        <div id="MenuInicial">
+            <h1 class="BemVindo Texto">Bem Vindo(a)!</h1>
+            <h2 class="Selecione Texto">Selecione uma opção</h2>
+            <button type="button" class="btn btn-info" id="Inserir">Inserir Dados</button>
+            <button type="button" class="btn btn-info" id="Consultar">Consultar Dados</button>
+            <button type="button" class="btn btn-warning Sobre" id="Sobre">Sobre!</button>
+        </div>
     </div>
     <div id="Insercao">
         <img src="./Imagens/PapelCaneta.png" alt="" class="PapelCaneta">
-        <h1 class="TextoPontuacao">Digite a pontuação</h1>
-        <input type="text" class="form-control Campo" id="Dado">
-        <button type="button" class="btn btn-primary BotaoInserir" id="BtInserir">Inserir!</button>
-        <img src="./Imagens/Saida.png" alt="" class="SaidaInsercao" id="VoltarInsercao">
+        <div id="MenuInsercao">
+            <h1 class="TextoPontuacao">Digite a pontuação</h1>
+            <input type="text" class="form-control Campo" id="Dado">
+            <button type="button" class="btn btn-primary BotaoInserir" id="BtInserir">Inserir!</button>
+            <img src="./Imagens/Saida.png" alt="" class="Saida" id="VoltarInsercao">
+        </div>
     </div>
     <div id="Consulta">
-        <img src="./Imagens/BD.png" alt="" class="bd">
-        <div id="Menu">
-            <h1 class="TextoPergunta">Selecione uma opção de consulta</h1>
+        <img src="./Imagens/BD.png" alt="" class="bd" id="bdimg">
+        <div id="MenuConsulta">
+            <h1 class="TextoPergunta" id="PerguntaConsulta">Selecione uma opção de consulta</h1>
             <button type="button" class="btn btn-warning BotaoPergunta" id="PorNumero">Por número do jogo</button>
-            <button type="button" class="btn btn-warning BotaoPergunta" id="Recordes">Ver Recordes</button>
-            <button type="button" class="btn btn-warning BotaoPergunta" id="Tabela">Tabela</button>
-            <img src="./Imagens/Saida.png" alt="" class="SaidaConsulta" id="VoltarConsulta">
+            <button type="button" class="btn btn-warning BotaoPergunta" id="MinMax">Mínimo & Máximo</button>
+            <button type="button" class="btn btn-warning BotaoPergunta" id="VerTabela">Tabela</button>
+            <img src="./Imagens/Saida.png" alt="" class="Saida" id="VoltarConsulta">
+        </div>
+        <div id="MenuConsultaNumero">
+            <h1 class="TextoConsultaNumero">Digite o número do registro</h1>
+            <input type="text" class="form-control CampoConsultaNumero" id="NumeroConsulta">
+            <input type="text" class="form-control CampoResultadoNumero" id="ResultadoConsultaNumero" readonly>
+            <button type="button" class="btn btn-warning BotaoConsultaNumero" id="ConsultarNumero">Consultar</button>
+            <img src="./Imagens/Saida.png" alt="" class="Saida" id="VoltarConsultaNumero">
+        </div>
+        <div id="MenuConsultaMinMax">
+            <div id="Min" class="PainelMinMax">
+                <h1 id="TxtMin" class="TxtMinMax">Mínimo</h1>
+                <h1 id="NumMin" class="NumMinMax">0</h1>
+            </div>
+            <div id="Max" class="PainelMinMax">
+                <h1 id="TxtMax" class="TxtMinMax">Máximo</h1>
+                <h1 id="NumMax" class="NumMinMax">0</h1>
+            </div>
+            <img src="./Imagens/Saida.png" alt="" class="Saida" id="VoltarConsultaMinMax">
+        </div>
+        <div id="Tabela">
+            <table class="table table-dark LayoutTabela">
+                <thead>
+                  <tr>
+                    <th scope="col">Jogo</th>
+                    <th scope="col">Placar</th>
+                    <th scope="col">Min. da Temporada</th>
+                    <th scope="col">Máx. da Temporada</th>
+                    <th scope="col">Quebra Recorde Min.</th>
+                    <th scope="col">Quebra Recorde Máx.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+            <img src="./Imagens/Saida.png" alt="" class="Saida" id="VoltarConsultaTabela">
         </div>
     </div>
 </body>
 </html>
 <script src="./jQuery/jQuery.js"></script>
 <script src="./Bootstrap/js/bootstrap.min.js"></script>
-<script src="./Componentes/ScriptInicio.js"></script>
-<script src="./Componentes/ScriptInsercao.js"></script>
-<script src="./Componentes/ScriptConsulta.js"></script>
+<script src="./Componentes/Inicio/ScriptInicio.js"></script>
+<script src="./Componentes/Insercao/ScriptInsercao.js"></script>
+<script src="./Componentes/Consulta/ScriptConsulta.js"></script>
+<script src="./Componentes/Consulta/ScriptConsultaNumero.js"></script>
+<script src="./Componentes/Consulta/ScriptConsultaMinMax.js"></script>
+<script src="./Componentes/Consulta/ScriptTabela.js"></script>
 <script src="./Componentes/Controle.js"></script>
 <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="./Componentes/EstiloInicio.css">
-<link rel="stylesheet" href="./Componentes/EstiloInsercao.css">
-<link rel="stylesheet" href="./Componentes/EstiloConsulta.css">
+<link rel="stylesheet" href="./Componentes/Inicio/EstiloInicio.css">
+<link rel="stylesheet" href="./Componentes/Insercao/EstiloInsercao.css">
+<link rel="stylesheet" href="./Componentes/Consulta/EstiloConsulta.css">
+<link rel="stylesheet" href="./Componentes/Consulta/EstiloConsultaNumero.css">
+<link rel="stylesheet" href="./Componentes/Consulta/EstiloConsultaMinMax.css">
+<link rel="stylesheet" href="./Componentes/Consulta/EstiloTabela.css">
