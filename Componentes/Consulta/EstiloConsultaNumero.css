@@ -1,0 +1,33 @@
+#ConsultaNumero {
+    background-color: teal;
+    height: 60vh;
+    width: 100vh;
+    position: relative;
+    top: 20vh;
+    display: none;
+}
+
+.TextoConsultaNumero {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 5vh;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    display: none;
+}
+
+.CampoConsultaNumero {
+    width: 35vh;
+    height: 7vh;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border: solid .2vh black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+    display: none;
+}
