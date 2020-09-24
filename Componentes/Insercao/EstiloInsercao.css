@@ -1,0 +1,71 @@
+#Insercao {
+    display: none;
+}
+
+.PapelCaneta {
+    width: 90vh;
+    height: 90vh;
+    position: absolute;
+    top: 8vh;
+    left: 100vh;
+    opacity: 50%;
+}
+
+#MenuInsercao {
+    height: 40vh;
+    width: 60vh;
+    position: relative;
+    top: 30vh;
+}
+
+.TextoPontuacao {
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vh;
+    position: relative;
+    left: 5%;
+    top: 7%;
+}
+
+.Campo {
+    width: 60%;
+    height: 17%;
+    position: relative;
+    top: 12%;
+    left: 20%;
+    border: solid .2vh black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.BotaoInserir {
+    width: 30%;
+    height: 13%;
+    position: relative;
+    top: 17%;
+    left: 34%;
+    border: solid .2vh black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+#VoltarInsercao {
+    position: relative;
+    top: 36%;
+    left: 10.5%;
+}
+
+.Saida {
+    height: 5vh;
+    border: solid .3vh black;
+}
+
+.Saida:hover {
+    cursor: pointer;
+    border-width: .5vh;
+    opacity: 80%;
+}
