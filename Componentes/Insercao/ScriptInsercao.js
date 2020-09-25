@@ -27,6 +27,7 @@ $("#BtInserir").click(() => {
 $("#VoltarInsercao").click(() => {
     AlternarPaginaInsercao();
     CalcularRecordes();
+    Dado.value = "";
     $("title").html("Bem Vindo(a)!");
     AlternarPaginaInicio();
 });

@@ -19,7 +19,7 @@ $("#PorNumero").click(() => {
 
 $("#MinMax").click(() => {
         AlternarElemsPaginaConsulta();
-        $("title").html("Mínimo & Máximo");
+        $("title").html("Mínimo & Máximo da Temporada");
         AlternarPaginaConsultaMinMax();
 });
 
