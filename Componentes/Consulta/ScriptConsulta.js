@@ -8,23 +8,19 @@ const AlternarElemsPaginaConsulta = () => {
 }
 
 $("#PorNumero").click(() => {
-    // if (Entradas.length > 0) {
+    if (Entradas.length > 0) {
         AlternarElemsPaginaConsulta();
         $("title").html("Consulta por Número");
         AlternarPaginaConsultaNumero();
-    // }
-    // else
-    //     alert("Ainda não há registros!");
+    }
+    else
+        alert("Ainda não há registros!");
 });
 
 $("#MinMax").click(() => {
-    // if (Entradas.length > 0) {
         AlternarElemsPaginaConsulta();
         $("title").html("Mínimo & Máximo");
         AlternarPaginaConsultaMinMax();
-    // }
-    // else
-    //     alert("Ainda não há registros!");
 });
 
 $("#VerTabela").click(() => {
