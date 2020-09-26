@@ -7,9 +7,6 @@
 }
 
 .TextoConsultaNumero {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     font-size: 5vh;
     position: absolute;
     top: 5%;
@@ -24,15 +21,12 @@
     left: 5%;
     border: solid .2vh black;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
     font-size: 5vh;
-    font-weight: bold;
 }
 
 .CampoResultadoNumero {
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     font-size: 1.5vh;
     width: 59%;
     border: solid .2vh black;

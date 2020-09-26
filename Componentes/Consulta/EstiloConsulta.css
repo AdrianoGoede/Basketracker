@@ -3,11 +3,11 @@
 }
 
 .bd {
-    height: 90vh;
+    height: 90%;
     width: 75vh;
     position: absolute;
-    top: 7vh;
-    left: 20vh;
+    top: 7%;
+    left: 10%;
     opacity: 70%;
 }
 
@@ -21,9 +21,6 @@
 }
 
 .TextoPergunta {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     font-size: 4vh;
     position: absolute;
     top: 15%;
