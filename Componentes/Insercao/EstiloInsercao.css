@@ -3,11 +3,11 @@
 }
 
 .PapelCaneta {
-    width: 90vh;
-    height: 90vh;
+    height: 85%;
+    width: 75vh;
     position: absolute;
-    top: 8vh;
-    left: 100vh;
+    top: 8%;
+    left: 50%;
     opacity: 50%;
 }
 
@@ -19,9 +19,6 @@
 }
 
 .TextoPontuacao {
-    color: white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5vh;
     position: relative;
     left: 5%;
@@ -36,9 +33,8 @@
     left: 20%;
     border: solid .2vh black;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 4vh;
-    font-weight: bold;
+    color: black;
 }
 
 .BotaoInserir {
@@ -48,8 +44,6 @@
     top: 51%;
     left: 35%;
     border: solid .2vh black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     font-size: 2vh;
 }
 
