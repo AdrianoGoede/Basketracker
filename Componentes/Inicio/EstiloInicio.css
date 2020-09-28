@@ -50,14 +50,14 @@ body {
     left: 27%;
 }
 
-#Inserir, #Consultar {
+.BtSuperior {
     width: 55%;
     height: 17%;
     position: absolute;
     border-style: solid;
     border-width: .4vh;
     border-color: black;
-    font-size: 5vh;
+    font-size: 4.5vh;
     font-weight: bold;
 }
 
@@ -71,7 +71,7 @@ body {
     left: 22%;
 }
 
-.Sobre {
+.BtInferior {
     width: 20%;
     height: 12%;
     border-style: solid;
@@ -81,5 +81,12 @@ body {
     font-weight: bold;
     position: absolute;
     top: 75%;
-    left: 39%;
+}
+
+.Limpar {
+    left: 29%;
+}
+
+.Sobre {
+    left: 50%;
 }

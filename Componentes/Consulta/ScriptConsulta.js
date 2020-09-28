@@ -1,3 +1,5 @@
+let ConfigTeclasConsulta = false;
+
 const AlternarPaginaConsulta = () => {
     $("#Consulta").fadeToggle(500);
     AlternarElemsPaginaConsulta();
@@ -5,6 +7,25 @@ const AlternarPaginaConsulta = () => {
 
 const AlternarElemsPaginaConsulta = () => {
     $("#MenuConsulta").fadeToggle(0);
+    SetarTeclasConsulta();
+}
+
+const SetarTeclasConsulta = () => {
+    if (!ConfigTeclasConsulta) {
+        $(document).keypress((e) => {
+            e.preventDefault();
+            switch (e.keyCode) {
+                case 13: $("#VoltarConsulta").click(); break;
+                case 49: $("#PorNumero").click(); break;
+                case 50: $("#MinMax").click(); break;
+                case 51: $("#VerTabela").click(); break;
+                default: alert("Opção inválida!"); break;
+            }
+        });
+    }
+    else
+        $(document).off("keypress");
+    ConfigTeclasConsulta = !ConfigTeclasConsulta;
 }
 
 $("#PorNumero").click(() => {
