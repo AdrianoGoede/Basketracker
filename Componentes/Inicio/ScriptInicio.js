@@ -42,10 +42,13 @@ $("#Consultar").click(() => {
 });
 
 $("#Limpar").click(() => {
-    Entradas = [];
-    MinimoTemp = 0;
-    MaximoTemp = 0;
-    alert("Todas as entradas foram removidas!");
+    let conf = confirm("Tem certeza que deseja excluir todas as entradas?");
+    if (conf) {
+        Entradas = [];
+        MinimoTemp = 0;
+        MaximoTemp = 0;
+        alert("Todas as entradas foram removidas!");
+    }
 });
 
 $("#Sobre").click(() => {
