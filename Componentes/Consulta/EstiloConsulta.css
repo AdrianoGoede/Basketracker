@@ -22,9 +22,8 @@
 
 .TextoPergunta {
     font-size: 4vh;
-    position: absolute;
+    position: relative;
     top: 15%;
-    left: 8%;
 }
 
 .BotaoPergunta {

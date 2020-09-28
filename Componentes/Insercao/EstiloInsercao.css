@@ -16,12 +16,12 @@
     width: 60vh;
     position: relative;
     top: 30vh;
+    text-align: center;
 }
 
 .TextoPontuacao {
     font-size: 5vh;
     position: relative;
-    left: 5%;
     top: 7%;
 }
 

@@ -4,13 +4,13 @@
     position: relative;
     top: 20vh;
     display: none;
+    text-align: center;
 }
 
 .TextoConsultaNumero {
     font-size: 5vh;
-    position: absolute;
+    position: relative;
     top: 5%;
-    left: 19%;
 }
 
 .CampoConsultaNumero {
