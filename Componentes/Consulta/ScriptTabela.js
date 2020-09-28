@@ -1,6 +1,22 @@
+let ConfigTeclasConsultaTabela = false;
+
 const AlternarTabela = () => {
     ConstruirTabela();
     $("#Tabela").fadeToggle(0);
+    SetarTeclasConsultaTabela();
+}
+
+const SetarTeclasConsultaTabela = () => {
+    if (!ConfigTeclasConsultaTabela) {
+        $(document).keypress((e) => {
+            e.preventDefault();
+            if (e.keyCode == 13)
+                $("#VoltarConsultaTabela").click();
+        });
+    }
+    else
+        $(document).off("keypress");
+    ConfigTeclasConsultaTabela = !ConfigTeclasConsultaTabela;
 }
 
 const ConstruirTabela = () => {

@@ -1,5 +1,9 @@
+let ConfigTeclasInserc = false;
+
 const AlternarPaginaInsercao = () => {
     $("#Insercao").fadeToggle(500);
+    SetarTeclasInserc();
+    $("#Dado").focus();
 }
 
 $("#Dado").keypress((e) => {
@@ -7,6 +11,22 @@ $("#Dado").keypress((e) => {
     if ("0123456789".includes(e.key))
         Dado.value += e.key;
 });
+
+const SetarTeclasInserc = () => {
+    if (!ConfigTeclasInserc) {
+        $(document).keypress((e) => {
+            e.preventDefault();
+            if (e.keyCode == 13)
+                if (Dado.value != "")
+                    $("#BtInserir").click();
+                else
+                    $("#VoltarInsercao").click();
+        });
+    }
+    else
+        $(document).off("keypress");
+    ConfigTeclasInserc = !ConfigTeclasInserc;
+}
 
 $("#BtInserir").click(() => {
     if (Dado.value != "") {
@@ -20,8 +40,6 @@ $("#BtInserir").click(() => {
         alert(`Pontuação [${dado}] inserida com sucesso!`);
         Dado.value = "";
     }
-    else
-        alert("Nenhum valor informado!");
 });
 
 $("#VoltarInsercao").click(() => {

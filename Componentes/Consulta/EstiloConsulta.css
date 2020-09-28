@@ -24,7 +24,7 @@
     font-size: 4vh;
     position: absolute;
     top: 15%;
-    left: 6%;
+    left: 8%;
 }
 
 .BotaoPergunta {
@@ -35,7 +35,7 @@
     font-size: 3vh;
     border: solid .2vh black;
     position: absolute;
-    left: 17.5%;
+    left: 19.5%;
 }
 
 #PorNumero {
@@ -53,5 +53,5 @@
 #VoltarConsulta {
     position: absolute;
     top: 77%;
-    left: 43%;
+    left: 45%;
 }
