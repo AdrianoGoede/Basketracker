@@ -1,3 +1,5 @@
+// Funções de configuração da página:
+
 let ConfigTeclasConsultaTabela = false;
 
 const AlternarTabela = () => {
@@ -33,6 +35,8 @@ const ConstruirTabela = () => {
         </tr>`);
     }
 }
+
+// Configuração dos botões:
 
 $("#VoltarConsultaTabela").click(() => {
     AlternarTabela();

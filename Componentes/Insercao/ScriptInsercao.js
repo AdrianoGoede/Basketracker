@@ -1,3 +1,5 @@
+// Funções de configuração da página:
+
 let ConfigTeclasInserc = false;
 
 const AlternarPaginaInsercao = () => {
@@ -28,10 +30,12 @@ const SetarTeclasInserc = () => {
     ConfigTeclasInserc = !ConfigTeclasInserc;
 }
 
+// Configuração dos botões:
+
 $("#BtInserir").click(() => {
     if (Dado.value != "") {
         const dado = parseInt(Dado.value);
-        if (dado > 1000) {
+        if (dado < 0 || dado > 1000) {
             alert("Entrada inválida, Deve ser um número de 0 à 1000!");
             Dado.value = "";
             return;

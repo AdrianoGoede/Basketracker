@@ -1,3 +1,5 @@
+// Funções de configuração da página:
+
 let ConfigTeclasConsulta = false;
 
 const AlternarPaginaConsulta = () => {
@@ -19,7 +21,6 @@ const SetarTeclasConsulta = () => {
                 case 49: $("#PorNumero").click(); break;
                 case 50: $("#MinMax").click(); break;
                 case 51: $("#VerTabela").click(); break;
-                default: alert("Opção inválida!"); break;
             }
         });
     }
@@ -27,6 +28,8 @@ const SetarTeclasConsulta = () => {
         $(document).off("keypress");
     ConfigTeclasConsulta = !ConfigTeclasConsulta;
 }
+
+// Configuração dos botões:
 
 $("#PorNumero").click(() => {
     if (Entradas.length > 0) {

@@ -1,3 +1,5 @@
+// Funções de configuração da página:
+
 let ConfigTeclasConsultaNum = false;
 
 const AlternarPaginaConsultaNumero = () => {
@@ -28,6 +30,8 @@ const SetarTeclasConsultaNum = () => {
         $(document).off("keypress");
     ConfigTeclasConsultaNum = !ConfigTeclasConsultaNum;
 }
+
+// Configuração dos botões:
 
 $("#ConsultarNumero").click(() => {
     if (NumeroConsulta.value != "") {
