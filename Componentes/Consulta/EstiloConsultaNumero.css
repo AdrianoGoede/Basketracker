@@ -3,8 +3,8 @@
     width: 130vh;
     position: relative;
     top: 20vh;
-    display: none;
     text-align: center;
+    display: none;
 }
 
 .TextoConsultaNumero {
@@ -29,12 +29,12 @@
     color: black;
     font-size: 1.5vh;
     width: 59%;
-    border: solid .2vh black;
-    text-align: center;
-    resize: none;
     position: absolute;
     top: 20%;
     left: 35.5%;
+    border: solid .2vh black;
+    text-align: center;
+    resize: none;
 }
 
 .BotaoConsultaNumero {

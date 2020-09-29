@@ -13,18 +13,16 @@
     border: solid .5vh black;
     position: absolute;
     text-align: center;
+    top: 0%;
 }
 
 #Min {
-    top: 0%;
     left: 0%;
 }
 
 #Max {
-    top: 0%;
     left: 55%;
 }
-
 
 .TxtMinMax {
     font-size: 4vh;

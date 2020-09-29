@@ -1,3 +1,5 @@
+// Funções de configuração da página:
+
 let ConfigTeclasInicio = false;
 
 const AlternarPaginaInicio = () => {
@@ -7,6 +9,7 @@ const AlternarPaginaInicio = () => {
 
 window.onload = () => {
     AlternarPaginaInicio();
+    // Ajustes para navegadores específicos:
 	if (navigator.userAgent.includes("Chrome"))
 		ResultadoConsultaNumero.rows = 8;
 }
@@ -20,7 +23,6 @@ const SetarTeclasInicio = () => {
                 case 50: $("#Consultar").click(); break;
                 case 51: $("#Limpar").click(); break;
                 case 52: $("#Sobre").click(); break;
-                default: alert("Opção inválida!"); break;
             }
         });
     }
@@ -28,6 +30,8 @@ const SetarTeclasInicio = () => {
         $(document).off("keypress");
     ConfigTeclasInicio = !ConfigTeclasInicio;
 }
+
+// Configuração dos botões:
 
 $("#Inserir").click(() => {
     AlternarPaginaInicio();
@@ -42,24 +46,31 @@ $("#Consultar").click(() => {
 });
 
 $("#Limpar").click(() => {
-    let conf = confirm("Tem certeza que deseja excluir todas as entradas?");
-    if (conf) {
-        Entradas = [];
-        MinimoTemp = 0;
-        MaximoTemp = 0;
-        alert("Todas as entradas foram removidas!");
+    if (Entradas.length > 0) {
+        const conf = confirm("Tem certeza que deseja remover todas as entradas?");
+        if (conf) {
+            Entradas = [];
+            MinimoTemp = 0;
+            MaximoTemp = 0;
+            alert("Todas as entradas foram removidas!");
+        }
     }
+    else
+        alert("Não há entradas para remover!");
 });
 
 $("#Sobre").click(() => {
+    $("title").html("!!! Sobre !!!");
+    alert("Desenvolvido por Adriano Andrei Goede!");
     if (navigator.userAgent.includes("Firefox")) {
-        $("title").html("!!! Sobre !!!");
-        alert("Desenvolvido por Adriano Andrei Goede\n\n         Microsoft Visual Studio Code\n\n             Debian 10.5 GNU/Linux");
-        $("title").html("Bem Vindo(a)!");
+        let msg = "Testado nos seguintes Navegadores:\n\n       Mozilla Firefox - versão 81.0\n    Google Chrome - versão - 85.0\n          Chromium - versão 83.0\n             Opera - versão 71.0";
+        msg += "\n\n              Nos seguintes SO's:\n\n           Windows 7 SP1 64 bits\n     Debian 10.6 GNU/Linux 64 bits";
+        alert(msg);
     }
     else if (navigator.userAgent.includes("Chrome")) {
-        $("title").html("!!! Sobre !!!");
-        alert("Desenvolvido por Adriano Andrei Goede\nMicrosoft Visual Studio Code\nDebian 10.5 GNU/Linux");
-        $("title").html("Bem Vindo(a)!");
+        let msg = "Testado nos seguintes Navegadores:\n\n-Mozilla Firefox - versão 81.0\n-Google Chrome - versão - 85.0\n-Chromium - versão 83.0\n-Opera - versão 71.0";
+        msg += "\n\nNos seguintes SO's:\n\n-Windows 7 SP1 64 bits\n-Debian 10.6 GNU/Linux 64 bits";
+        alert(msg);
     }
+    $("title").html("Bem Vindo(a)!");
 });

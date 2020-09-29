@@ -53,9 +53,7 @@ body {
     width: 55%;
     height: 17%;
     position: absolute;
-    border-style: solid;
-    border-width: .4vh;
-    border-color: black;
+    border: solid .4vh black;
     font-size: 4vh;
     font-weight: bold;
 }
@@ -73,10 +71,8 @@ body {
 .BtInferior {
     width: 20%;
     height: 12%;
-    border-style: solid;
-    border-width: .4vh;
-    border-color: black;
-    font-size: 3vh;
+    border: solid .4vh black;
+    font-size: 2.5vh;
     font-weight: bold;
     position: absolute;
     top: 75%;

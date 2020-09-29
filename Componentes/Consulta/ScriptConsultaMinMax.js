@@ -1,3 +1,5 @@
+// Funções de configuração da página:
+
 let ConfigTeclasConsultaMinMax = false;
 
 const AlternarPaginaConsultaMinMax = () => {
@@ -23,6 +25,8 @@ const ObterMinMax = () => {
     $("#NumMin").html(MinimoTemp);
     $("#NumMax").html(MaximoTemp);
 }
+
+// Configuração dos botões:
 
 $("#VoltarConsultaMinMax").click(() => {
     AlternarPaginaConsultaMinMax();
